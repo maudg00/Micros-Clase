@@ -1,4 +1,4 @@
-*Program Example 4: Demonstrates Timeout, by triggering an event a fixed
+/*Program Example 4: Demonstrates Timeout, by triggering an event a fixed
 duration after a button press. */
 
 #include "mbed.h"
