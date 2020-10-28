@@ -10,6 +10,7 @@ Timer t;
 Timeout timeout;
 void ensenarTiempo()
 {
+    pc.printf("Interrupcion!\n");
     pc.printf("El tiempo transcurrido es %f.\n", t.read());
 }
 void prenderLED1()
