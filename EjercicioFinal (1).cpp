@@ -15,6 +15,8 @@ void ensenarTiempo()
 void prenderLED1()
 {
     Led1=1;
+    wait(0.5);
+    Led1=0;
 }
 void prenderLED2()
 {
