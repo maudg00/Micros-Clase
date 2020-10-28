@@ -15,14 +15,18 @@ void ensenarTiempo()
 }
 void prenderLED1()
 {
-    Led1=!Led1;
+    Led1=1;
+    wait(0.5);
+    Led1=0;
 }
 void prenderLED2()
 {
     Led2=!Led2;
 }
 int main() {
-    int espera=1;
+    float espera=1;
+    Led1=0;
+    Led2=0;
     t.start();
     interrupt.rise(&ensenarTiempo);
     ticker.attach(&prenderLED2, 1);
@@ -30,7 +34,7 @@ int main() {
      {
         if(botonIncrementarEspera==1)
         {
-            espera++;
+            espera += 0.5;
         }
         if(botonPrenderLED==1)
         {
