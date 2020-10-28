@@ -15,15 +15,11 @@ void ensenarTiempo()
 }
 void prenderLED1()
 {
-    Led1=1;
-    wait(0.5);
-    Led1=0;
+    Led1=!Led1;
 }
 void prenderLED2()
 {
-    Led2=1;
-    wait(0.5);
-    Led2=0;
+    Led2=!Led2;
 }
 int main() {
     int espera=1;
@@ -40,6 +36,5 @@ int main() {
         {
             timeout.attach(&prenderLED1, espera);
         }
-        wait(0.2);
     }
 }
